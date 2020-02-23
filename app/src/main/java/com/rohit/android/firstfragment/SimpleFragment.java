@@ -19,7 +19,7 @@ import static android.content.ContentValues.TAG;
 public class SimpleFragment extends Fragment {
 
 
-    public static final String TAG = "lifeCycleEvents";
+    public static final String FRAGMENT_TAG = "fragment_tag";
 
     public SimpleFragment() {
         // Required empty public constructor
@@ -29,7 +29,7 @@ public class SimpleFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        Log.d(TAG, "onAttach: ");   
+        Log.d(FRAGMENT_TAG, "onAttach: ");
     }
 
 
@@ -37,20 +37,20 @@ public class SimpleFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.d(TAG, "onCreate: ");
+        Log.d(FRAGMENT_TAG, "onCreate: ");
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.d(TAG, "onResume: ");
+        Log.d(FRAGMENT_TAG, "onResume: ");
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        Log.d(TAG, "onCreateView: ");
+        Log.d(FRAGMENT_TAG, "onCreateView: ");
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_simple, container, false);
     }
@@ -58,24 +58,24 @@ public class SimpleFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        Log.d(TAG, "onPause: ");
+        Log.d(FRAGMENT_TAG, "onPause: ");
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.d(TAG, "onStop: ");
+        Log.d(FRAGMENT_TAG, "onStop: ");
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "onDestroy: ");
+        Log.d(FRAGMENT_TAG, "onDestroy: ");
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        Log.d(TAG, "onDetach: ");
+        Log.d(FRAGMENT_TAG, "onDetach: ");
     }
 }
